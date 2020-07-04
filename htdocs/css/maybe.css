@@ -41,8 +41,20 @@ a, a:visited, a:hover {
     font-weight: normal;
 }
 
+table.list {
+    border-collapse: separate;
+    border-spacing: 0 0.5ex;
+}
+
+table.list td:first-of-type {
+    width: 30%;
+}
+
 td {
     vertical-align: top;
+}
+
+tr {
 }
 
 .w3c {
