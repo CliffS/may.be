@@ -1,0 +1,52 @@
+-----------------------------------------------------------
+
+Many PC applications have separate menus for selecting
+typeface families and typeface styles. Most applications
+let you choose among regular, bold, and italic styles in
+the Style menu. However, some font packages include font
+software with additional style variations and stroke weight
+variations. To select these variations, you need to know
+how the bold and italic styles are linked to the base
+typeface.
+
+For example, the CharterITC BT typefaces include roman,
+italic, black, black italic, bold and bold italic. To use
+CharterITC BT Black, choose CharterITC BT from the application's
+Font Menu(or equivalent), and then choose Bold (or Black)
+from the Style menu(or equivalent). To use the bold version,
+choose CharterITC Bd BT
+
+If you are using a Microsoft Windows application, follow
+the guide to typeface style selection below. For some fonts,
+an alternate style may be listed in the guide below. Use the
+style that appears in your application. If you are not using a
+Microsoft Windows application, use the information below as a
+guideline and refer to the application's documentation.
+
+If the desired font is Exotic 350 Bold, select:
+
+Microsoft Windows Applications:
+	Typeface: Exotc350 Bd BT
+	Style:    Normal
+	Alternate TrueType Style: Bold
+
+         TrueType font filename: tt0628m_.TTF
+
+If the desired font is Exotic 350 Demi-Bold, select:
+
+Microsoft Windows Applications:
+	Typeface: Exotc350 DmBd BT
+	Style:    Normal
+	Alternate TrueType Style: Demi-Bold
+
+         TrueType font filename: tt0627m_.TTF
+
+If the desired font is Exotic 350 Light, select:
+
+Microsoft Windows Applications:
+	Typeface: Exotc350 Lt BT
+	Style:    Normal
+	Alternate TrueType Style: Light
+
+         TrueType font filename: tt0626m_.TTF
+

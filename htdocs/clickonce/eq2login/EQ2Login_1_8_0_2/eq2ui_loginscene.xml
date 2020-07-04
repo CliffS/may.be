@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page IgnoreTab="false" Name="LoginScene" PackSize="absolute,absolute" PackSizeProp="0002/0003,0002/0003" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+  <TextStyle Algorithm="Bold" FontName="Times New Roman" Language="english" Name="FontCountDown" PointSize="114" UseCachedFont="true"/>
+  <Page alwaysontop="true" BackgroundOpacity="0.475" IgnoreTab="false" Name="LSUsernamePassword" OnShow="WindowPage.AutoplayChar.visible=true WindowPage.AutoplayWorld.visible=true" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768">
+    <Page Activated="true" Location="140,180" Name="Options" PackLocation="cfc,cfc" PackLocationProp="-287/0001,-157/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="170,95" Size="170,95">
+      <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="1,55" MinimumSize="22,22" Name="ShowPW_Box" PackSize="a" PackSizeProp="0002/0001,xxxx/xxxx" ScrollExtent="168,22" Size="168,22" Style="/CommonElements.Checkbox.data.style" OnPress="Parent.Parent.WindowPage.Password.Password=(!Parent.Parent.WindowPage.Password.Password)" Activated="false" Checked="false">Show Password</Checkbox>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Options_Frame" PackSize="absolute/absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="170,95" Size="170,95"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="Options" Location="1,1" Name="Options_Text" PackSize="absolute/absolute" ScrollExtent="168,38" Size="168,38" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#B6CFD1">Options</Text>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,1" Name="Text_Frame" PackSize="absolute/absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="168,38" Size="168,38"/>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,40" Name="Choices_Frame" PackSize="Absolute,Absolute" PackSizeProp="0002/0001,0041/0001" RStyleDefault="/rectlist.win_plain" ScrollExtent="168,54" Size="168,54"/>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#008FFF" Location="3,3" Name="Opt_Backdrop" PackSize="Absolute,Absolute" PackSizeProp="0006/0001,0023/0001" ScrollExtent="164,72" Size="164,72"/>
+      <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" Name="LSInputStyle" NormalTextStyle="/Fonts.FontArial14" SelectionColor="#C0C020" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0"/>
+    </Page>
+    <Page Location="330,50" Name="WindowPage" PackLocation="cfc,cfc" PackLocationProp="-002/0001,0018/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="360,705" Size="360,705">
+
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,130" Name="Select_Frame" PackSize="absolute/absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="360,440" Size="360,440"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="Select Character" Location="18,130" Name="Select_Char" ScrollExtent="320,19" Size="320,19" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#B6CFD1">Select Character</Text>
+
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,572" Name="AC_Frame" PackSize="absolute/absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="360,125" Size="360,125"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="Original Character Select" Location="18,572" Name="AC_Char" ScrollExtent="320,19" Size="320,19" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#B6CFD1">Original Character Select</Text>
+
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,1" Name="WC_Frame" PackSize="Absolute,Absolute" PackSizeProp="0000/0001,0562/0001" RStyleDefault="/rectlist.win_plain" ScrollExtent="360,128" Size="360,128"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="Username" Location="25,13" Name="UsernameText" ScrollExtent="73,19" Size="73,19" TextAlignment="Right" TextAlignmentVertical="Center">Username</Text>
+      <Textbox Color="#F0F07F" Cursor="/Cursor.Text" Location="101,10" Name="Username" ScrollExtent="158,24" Size="158,24" Style="LSInputStyle"></Textbox>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="98,7" Name="UsernameFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="164,30" Size="164,30"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="Password" Location="25,43" Name="PasswordText" ScrollExtent="73,19" Size="73,19" TextAlignment="Right" TextAlignmentVertical="Center">Password</Text>
+      <Textbox Color="#F0F07F" Cursor="/Cursor.Text" Location="101,40" Name="Password" Password="true" ScrollExtent="158,24" Size="158,24" Style="LSInputStyle">PASSWORDHERE</Textbox>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="98,37" Name="PasswordFrame" RStyleDefault="/rectlist.win_plain" ScrollExtent="164,30" Size="164,30"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="Character" Location="25,73" Name="AutoplayCharName2" ScrollExtent="73,19" Size="73,19" TextAlignment="Right" TextAlignmentVertical="Center">Character</Text>
+      <Textbox Color="#F0F07F" Cursor="/Cursor.Text" Location="101,70" Name="AutoplayChar" ScrollExtent="158,24" Size="158,24" Style="LSInputStyle"></Textbox>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="98,67" Name="CharacterFrame2" RStyleDefault="/rectlist.win_plain" ScrollExtent="164,30" Size="164,30"/>
+      <Text Font="/Fonts.FontZapf15" LocalText="World" Location="25,103" Name="AutoplayWorldName2" ScrollExtent="73,19" Size="73,19" TextAlignment="Right" TextAlignmentVertical="Center">World</Text>
+      <Textbox Color="#F0F07F" Cursor="/Cursor.Text" Location="101,100" Name="AutoplayWorld" ScrollExtent="158,24" Size="158,24" Style="LSInputStyle"></Textbox>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="98,97" Name="WorldFrame2" RStyleDefault="/rectlist.win_plain" ScrollExtent="164,30" Size="164,30"/>
+      <Button Color="#FF8080" LocalText="Quit" Location="268,80" Name="QuitButton" PackLocation="absolute,absolute" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="85,40" Size="85,40" Style="/ButtonStyles.text_button_default">Quit</Button>
+      <Button LocalText="Clear" Location="268,45" Name="ClearButton" OnPress="Parent.AutoplayChar.Text=&apos;&apos; Parent.AutoplayWorld.Text=&apos;&apos; Parent.Password.Text=&apos;&apos; Parent.Username.Text=&apos;&apos;" ScrollExtent="85,40" Size="85,40" Style="/ButtonStyles.text_button_default"></Button>
+      <Button Color="#CCFFCC" IsDefaultButton="true" LocalText="Connect" Location="268,10" Name="ConnectButton" PackLocation="cfc,bottop" PackLocationProp="0130/0001,xxxx/xxxx" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="85,40" Size="85,40" Style="/ButtonStyles.text_button_default">Connect</Button>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Color="#008FFF" Location="3,3" Name="WC_Backdrop" PackSize="Absolute,Absolute" PackSizeProp="0006/0001,0008/0001" ScrollExtent="354,682" Size="354,682"/>
+      <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" Name="LSInputStyle" NormalTextStyle="/Fonts.FontArial14" SelectionColor="#C0C020" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0"/>
+    </Page>
+    <OpacityEffector Name="ShowEffector" Speed="6.000" TargetOpacity="1.000"/>
+    <OpacityEffector Name="HideEffector" Speed="6.000"/>
+  </Page>
+  <Page BackgroundOpacity="0.475" Name="LSInfo" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <OpacityEffector Name="ShowEffector" Speed="6.000" TargetOpacity="1.000"/>
+    <Page Location="342,274" Name="WindowPage" PackLocation="center,center" PackLocationProp="-170/0001,-110/0001" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="371,241" Size="371,241">
+      <Button LocalText="OK" Location="154,173" Name="OkButton" PackLocation="fixed,fixed" PackSize="fixed,fixed" PackSizeProp="0002/0003,0002/0003" ScrollExtent="71,30" Size="71,30" Style="/ButtonStyles.text_button_default">OK</Button>
+      <Page BackgroundOpacity="1.000" Location="18,29" Name="WC_Frame" PackLocation="left,top" PackLocationProp="0018/0001,0029/0001" PackSize="absolute,absolute" PackSizeProp="0030/0001,0055/0001" RStyleDefault="/FrameStyles.win_gold_simple" ScrollExtent="341,186" Size="341,186"/>
+      <Text Font="/Fonts.FontZapf18" LocalText="[DEVL]Message" Location="25,60" Name="InfoText" ScrollExtent="327,106" Size="327,106" TextAlignment="Center" TextAlignmentVertical="Center">[DEVL]Message</Text>
+      <Text AbsorbsInput="false" Font="/Fonts.FontArial14" Location="4,9" Name="TitleText" ScrollExtent="322,17" Size="322,17" TextAlignment="Center" Visible="false"></Text>
+      <Button LocalTooltip="Close" Location="324,6" Name="Close_Default" PackLocation="right,top" PackLocationProp="-047/0001,0006/0001" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.close_button" Tooltip="Close" UserMovable="true" Visible="false"></Button>
+      <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="21,37" Name="WC_Backdrop" PackLocation="left,top" PackLocationProp="0021/0001,0037/0001" PackSize="absolute,absolute" PackSizeProp="0039/0001,0069/0001" RStyleDefault="/FrameStyles.background_gold" ScrollExtent="332,172" Size="332,172"/>
+    </Page>
+    <OpacityEffector Name="HideEffector" Speed="6.000"/>
+  </Page>
+  <Page BackgroundOpacity="1.000" Name="EQ2Title" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Text AbsorbsInput="false" Font="FontCountDown" LocalText="1" Name="CountDown" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" TextAlignment="Center" TextAlignmentVertical="Center">1</Text>
+  </Page>
+  <Page BackgroundOpacity="1.000" Name="Advertisement2" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Text AbsorbsInput="false" Font="FontCountDown" LocalText="2" Name="CountDown" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" TextAlignment="Center" TextAlignmentVertical="Center">2</Text>
+  </Page>
+  <Page BackgroundOpacity="1.000" Name="Advertisement" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Text AbsorbsInput="false" Font="FontCountDown" LocalText="3" Name="CountDown" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" TextAlignment="Center" TextAlignmentVertical="Center">3</Text>
+  </Page>
+  <Page BackgroundOpacity="1.000" Name="ESRBRating" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Text AbsorbsInput="false" Font="FontCountDown" LocalText="4" Name="CountDown" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" TextAlignment="Center" TextAlignmentVertical="Center">4</Text>
+  </Page>
+  <Page BackgroundOpacity="1.000" Name="SOELogo" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Text AbsorbsInput="false" Font="FontCountDown" LocalText="5" Name="CountDown" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" TextAlignment="Center" TextAlignmentVertical="Center">5</Text>
+  </Page>
+  <Page Name="EpilepsyWarning" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <ImageStyle Name="background">
+      <ImageFrame Name="title" Source="images/frontend/epilepsy.dds" SourceRect="0,0,1024,768"/>
+    </ImageStyle>
+    <ShadowStyle Name="shadowstyle"/>
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="120,176" Name="WC_Frame" PackLocation="left,top" PackLocationProp="0120/0001,0176/0001" PackSize="absolute,absolute" PackSizeProp="0215/0001,0342/0001" RStyleDefault="/FrameStyles.win_gold" ScrollExtent="809,426" Size="809,426"/>
+    <Text Font="/Fonts.FontZapf20" LocalText="EPILEPSY WARNING" Location="10,210" Name="LabelEpilepsyWhite" PackLocation="center,fpn" PackLocationProp="-502/0001,0232/0768" ScrollExtent="1005,22" ShadowStyle="shadowstyle" Size="1005,22" TextAlignment="Center" TextAlignmentVertical="Center">EPILEPSY WARNING</Text>
+    <Text Font="/Fonts.FontZapf18" LocalText="Please read before playing this game or allowing your children to play this game.  Some people are susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns in everyday life.  Such people may have a seizure while watching certain monitor images or playing certain video games.  This may happen even if the person has no medical history of epilepsy or has never had any epileptic seizures.  If you or anyone in your family has ever had symptoms relating to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, consult your doctor prior to playing.  We advise that parents should monitor the use of video games by their children.  If you or your child experience any of the following symptoms: dizziness, blurred vision, eye or muscle twitches, loss of consciousness, disorientation, any involuntary movement or convulsion, while playing a video game, IMMEDIATELY discontinue use and consult your doctor." Location="140,175" Name="LabelEpilepsyBodyWhite" PackLocation="center,proportional" PackLocationProp="-372/0001,0381/0768" ScrollExtent="776,413" ShadowStyle="shadowstyle" Size="776,413" TextAlignmentVertical="Center">
+	Please read before playing this game or allowing your children to play this game.  Some people are susceptible to epileptic seizures or loss of consciousness when exposed to certain flashing lights or light patterns in everyday life.  Such people may have a seizure while watching certain monitor images or playing certain video games.  This may happen even if the person has no medical history of epilepsy or has never had any epileptic seizures.  If you or anyone in your family has ever had symptoms relating to epilepsy (seizures or loss of consciousness) when exposed to flashing lights, consult your doctor prior to playing.  We advise that parents should monitor the use of video games by their children.  If you or your child experience any of the following symptoms: dizziness, blurred vision, eye or muscle twitches, loss of consciousness, disorientation, any involuntary movement or convulsion, while playing a video game, IMMEDIATELY discontinue use and consult your doctor.
+      
+      Do not stand too close to the screen.
+      Avoid playing if you are tired or have not had much sleep.
+      Make sure the room you are in is well lit.
+      Rest for at least 10 to 15 minutes per hour while playing a video game.
+    </Text>
+    <OpacityEffector Name="ShowEffector" SetOnEffect="true" Speed="1.000" TargetOpacity="1.000"/>
+    <Page BackgroundOpacity="1.000" Location="127,181" Name="WC_Backdrop" Opacity="0.850" PackLocation="left,top" PackLocationProp="0127/0001,0181/0001" PackSize="absolute,absolute" PackSizeProp="0235/0001,0358/0001" RStyleDefault="/FrameStyles.background_gold_stretch" ScrollExtent="789,410" Size="789,410"/>
+    <Image Name="Backdrop" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0000/0001" ScrollExtent="1024,768" Size="1024,768" Style="background"/>
+  </Page>
+  <ImageStyle Name="background">
+    <ImageFrame Name="title" Source="images/frontend/epilepsy.dds" SourceRect="0,0,1024,768"/>
+  </ImageStyle>
+</Page>

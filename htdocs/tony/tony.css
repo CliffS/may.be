@@ -1,0 +1,14 @@
+#main {
+    width : 720px;
+    margin : 10px auto;
+    text-align : center;
+}
+
+.link-block {
+    margin-top : 40px;
+    text-align : left;
+}
+
+h1, h2 {
+    text-align : center;
+}

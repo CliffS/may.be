@@ -1,0 +1,286 @@
+/*************************************************************
+ *                         Site styles         
+ *************************************************************/
+
+body {
+    height : 100%;
+    margin : 0px;
+    padding : 0px;
+    background : transparent url(images/bg.jpg) repeat-y fixed center center;
+    font-family : Arial, Helvetica,sans-serif;
+}
+
+#container {
+    width : 960px;
+    margin : 0 auto;
+}
+
+#content {
+    float : right;
+    width : 698px;
+    position : relative;
+    margin : 0px;
+    padding : 0px 0px 0px 20px;
+    text-align : justify;
+    margin-bottom : 30px;
+}
+
+#content p {
+    line-height : 21px;
+}
+
+a img {
+    border : 0 none;
+}
+
+.en {
+}
+
+td {
+    vertical-align : top;
+}
+
+
+/*
+------------------------------------------------------------
+|                         Sidebar styles         
+------------------------------------------------------------
+ */
+#sidebar {
+    width : 212px;
+    float : left;
+    padding : 30px 20px 0px 10px;
+}
+
+#sidebar a, #sidebar a:visited,
+#content a, #content a :visited {
+    color : black;
+    text-decoration : none;
+}
+
+#sidebar a:hover,
+#content a:hover {
+    color : #0085CF;
+}
+
+#name {
+    background-color : #959595;
+    width : 201px;
+    height : 42px;
+    font-size : 25px;
+    color : white;
+    text-shadow : 1px 1px #444;
+    padding-top : 8px;
+    text-align : center;
+    margin-top : 60px;
+}
+
+.fixed {
+    position : fixed;
+}
+
+#frame {
+    background : url(images/frame.jpg) no-repeat;
+    width : 171px;
+    height : 214px;
+    margin : 0px 0px 10px 0px;
+    padding : 15px;
+}
+
+.info {
+    margin-bottom : 10px;
+}
+
+.info table {
+    width : 100%;
+}
+
+.info td, .value {
+    font-size : smaller;
+}
+
+.value {
+    padding : 3px;
+    line-height : 17px;
+}
+
+.info .head {
+    background-color : #959595;
+    color : white;
+    text-shadow : 1px 1px #444;
+    padding : 4px;
+}
+
+/*
+------------------------------------------------------------
+|                        Top styles         
+------------------------------------------------------------
+ */
+
+#top {
+    clear : both;
+    overflow : hidden;
+    font-size : 12px;
+    font-weight : bold;
+    padding : 25px 0px 0px 0px;
+    position : relative;
+}
+
+#top ul {
+    margin : 0px;
+    padding : 0px;
+    list-style : none;
+}
+
+#top ul li {
+    float : left;
+    margin : 0px 20px 0px 0px;
+}
+
+#top a {
+    display : block;
+    padding : 10px 10px 10px 23px;
+    outline : none;
+}
+
+#top a:link,
+#top a:visited {
+    color : #000;
+    text-decoration : none;
+}
+
+#top a:hover {
+    color : #0085CF;
+}
+
+.download {
+    background : url(images/disk.jpg) no-repeat 0px 9px;
+}
+
+#mail {
+    background : url(images/mail.jpg) no-repeat 0px 9px;
+}
+
+#print {
+    background : url(images/printer.jpg) no-repeat 0px 9px;
+}
+
+#photo {
+    background : url(images/image.jpg) no-repeat 0px 9px;
+}
+
+#flags {
+    right : 20px;
+    bottom : 8px;
+    position : absolute;
+}
+
+#flags img {
+    width : 24px;
+    height : 16px;
+    margin-left : 5px;
+    cursor : pointer;
+}
+
+/*
+------------------------------------------------------------
+|                        Content styles         
+------------------------------------------------------------
+ */
+
+.section {
+    page-break-inside : avoid;
+}
+
+h1 {
+    background : url(images/gray-trans.png) no-repeat;
+    height : 52px;
+    width : 369px;
+    left : -34px;
+    position : relative;
+    padding : 5px 0px 0px 12px;
+    font-size : 25px;
+    color : white;
+    text-shadow : 1px 1px #444;
+    margin-bottom : 0px;
+    margin-top : 25px;
+    clear : left;
+}
+
+.blue { background : url(images/blue-trans.png) no-repeat; }
+.orange { background : url(images/orange-trans.png) no-repeat; }
+.pink { background : url(images/pink-trans.png) no-repeat; }
+.lime { background : url(images/lime-trans.png) no-repeat; }
+.red { background : url(images/red-trans.png) no-repeat; }
+.purple { background : url(images/purple-trans.png) no-repeat; }
+
+hr {
+    border : 0 none;
+    border-bottom : 3px dashed #999;
+}
+
+h2 {
+    margin-bottom : 0px;
+}
+
+h2 small {
+    text-transform : uppercase;
+    font-size : 17px;
+    color : #999;
+}
+
+h3 {
+    font-size : 17px;
+    margin : 0px 0px 10px 0px;
+}
+
+.position {
+    text-transform : uppercase;
+    font-size : 12px;
+    color : #333;
+}
+
+.location {
+    font-style : italic;
+    font-size : 14px;
+}
+
+.floatleft {
+    float : left;
+    overflow : hidden;
+    margin : 0px 30px 20px 0px;
+}
+
+.floatleft ul {
+    margin-bottom : 0px;
+    list-style : square;
+}
+
+.extra {
+    font-size : smaller;
+}
+
+.extra:before {
+    content : '- ';
+}
+
+.clear {
+    clear : both;
+    height : 0px;
+}
+
+.refs {
+}
+
+.refs td {
+    padding-left : 1ex;
+    padding-right : 2px;
+}
+
+.refs td:first-child {
+    background-color : #959595;
+    text-align : right;
+    color : white;
+    text-shadow : 1px 1px #444;
+    display : none;
+}

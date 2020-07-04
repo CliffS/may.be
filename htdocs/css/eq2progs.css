@@ -1,0 +1,50 @@
+.logo {
+  text-align : center;
+  padding: 4em 0px;
+}
+body {
+  background-color : white;
+  font: 14px "Lucinda Console", Arial, sans-serif;
+  color: black;
+}
+.main {
+  width: 100%;
+}
+a, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+#connect {
+  color : green;
+  font-style : normal;
+}
+#left {
+  padding-right: 10%;
+  text-align: justify;
+}
+td {
+  vertical-align: top;
+}
+code {
+  vertical-align: top;
+}
+h1 {
+  text-align: center;
+}
+.s {
+    text-decoration: line-through;
+}
+
+.w3c {
+    width : 100%;
+    text-align : right;
+    border : none;
+}
+
+img {
+    border : none;
+}

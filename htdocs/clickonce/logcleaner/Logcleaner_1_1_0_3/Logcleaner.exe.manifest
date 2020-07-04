@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="Logcleaner.exe" version="1.1.0.3" publicKeyToken="90c7a5128fa1485e" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="eq_logo32.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Logcleaner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Logcleaner.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CleanLogLib.dll" size="24576">
+      <assemblyIdentity name="CleanLogLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>BIojlD/3Jj7Zmri7EQDFqG9V5WQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Logcleaner.exe" size="61440">
+      <assemblyIdentity name="Logcleaner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>dGxuPTfSKe8Eww+/V0s+2qNXndg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MayBE.Utilities.dll" size="233472">
+      <assemblyIdentity name="MayBE.Utilities" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ImdXLwylkPoJfBfmnybplLOsGFQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MayBE.Utilities.Registry.dll" size="16384">
+      <assemblyIdentity name="MayBE.Utilities.Registry" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>oOVPs+dEKqHA4+fGtS5si8mY6Is=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShellLink.dll" size="20480">
+      <assemblyIdentity name="ShellLink" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4fLiMAU3OY31cnCD0yg6v0QAi2g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="eq_logo32.ico" size="3262">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>q7vDVRH1WmEGSYIE+TGKroF/EvY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CLIFF\Cliff Stanford" issuerKeyHash="8647ca878253363219ab3b1cc73586e2f761c8b4" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>PDR2yMZptdE3H6+GqXNAHCcLeY8=</DigestValue></Reference></SignedInfo><SignatureValue>GAP18bP1qAh/1+mzCYkzN9rog8R5JQLl4r0gNrxF4igt4dMm0xTMtpu+/sNarCpqEH4HsF8GAzKfobbrPf8aZvap6S429YGS+PpvXfY3WQr8Aerb5Obd4PfuSHAJMg2o+j2olJ3j165ldc3/1iMyvSRFQDUOCZTuVloPOxzL9LM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>onq5VHwIB7g6R2IKjj9uudbIDkVl4ZlKRW6Z23snvsCgv4nLijZSZcOq8zzlbissOnAwqcvtV572LQwAemodrqTGykB7njixSZMJf2qjyrqX+/L1fj8nNk2j8SsUNjXpZa86WkKL0j8+/d6xUdXd/yP0W56ODJWHB61ss3Bqr2s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8f790b271c4073a986af1f37d1b569c6c876343c" Description="" Url=""><as:assemblyIdentity name="Logcleaner.exe" version="1.1.0.3" publicKeyToken="90c7a5128fa1485e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CLIFF\Cliff Stanford</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>S7ZtzC6DYwOtoWIPCarucWjeOXQ=</DigestValue></Reference></SignedInfo><SignatureValue>aQGPaOJQz/qXmiO8QWH10UgiIdqaQh/kIIvxbrkYlg+9ZvU4DMW4U0+0U6bQOjCikFXkvHiPj6EbS8CmeS09b4Ncu1qHgwjB1jfR+ZJSQAMBcPjyF/3QzZU+vEBE+SJ05D7vPnvuQTcBEg/Jl9jupcW0qvf/VHHKJizyUGBm7Ck=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>onq5VHwIB7g6R2IKjj9uudbIDkVl4ZlKRW6Z23snvsCgv4nLijZSZcOq8zzlbissOnAwqcvtV572LQwAemodrqTGykB7njixSZMJf2qjyrqX+/L1fj8nNk2j8SsUNjXpZa86WkKL0j8+/d6xUdXd/yP0W56ODJWHB61ss3Bqr2s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAU6gAwIBAgIQZFdcu5Z/faZGifrAh0kZaTAJBgUrDgMCHQUAMDMxMTAvBgNVBAMeKABDAEwASQBGAEYAXABDAGwAaQBmAGYAIABTAHQAYQBuAGYAbwByAGQwHhcNMDcwNzAzMTMwNTEyWhcNMTIwNzAzMTMwNTEyWjAzMTEwLwYDVQQDHigAQwBMAEkARgBGAFwAQwBsAGkAZgBmACAAUwB0AGEAbgBmAG8AcgBkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCierlUfAgHuDpHYgqOP2651sgORWXhmUpFbpnbeye+wKC/icuKNlJlw6rzPOVuKyw6cDCpy+1XnvYtDAB6ah2upMbKQHueOLFJkwl/aqPKupf78vV+Pyc2TaPxKxQ2NellrzpaQovSPz793rFR1d3/I/Rbno4MlYcHrWyzcGqvawIDAQABMAkGBSsOAwIdBQADgYEAEbBgYRvyI3WtsMofQ7xCzEqRQB69W9YUADuVe3MO5OrxNcxL8yx40x6Ghs28vjFqTs6gyPKv19r2kOh6oRAVqkZvBwuPNd9JFelXq5FmX63vnGFeyISL2RUZjG9ko0zgt0FpvYVlpsmg0z1GDKBHuWTtQF4xpPokKl/JWUaLPag=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

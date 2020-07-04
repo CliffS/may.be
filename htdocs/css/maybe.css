@@ -1,0 +1,85 @@
+.logo {
+    text-align : center;
+    padding-top : 10%;
+    padding-bottom : 3em;
+}
+
+img {
+    border : none;
+}
+
+body {
+    font: 14px "Lucinda Console", Arial, sans-serif;
+    background-color : white;
+    color : black;
+}
+
+.mainpage {
+    font-weight : bold;
+}
+
+.left {
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.right {
+  text-align: justify;
+}
+
+h1, h2, h3 {
+    text-align: left;
+}
+
+a, a:visited, a:hover {
+    color : red;
+    text-decoration: underline;
+}
+
+.h2 {
+    font-size: x-large;
+    font-weight: normal;
+}
+
+td {
+    vertical-align: top;
+}
+
+.w3c {
+    width : 100%;
+    text-align : right;
+    border : none;
+}
+.errmsg {
+    color : darkred;
+}
+.quote {
+    font-style : italic;
+    margin-left : 5ex;
+    margin-right : 5ex;
+}
+
+.result {
+    padding : 1em;
+    max-width : 60ex;
+}
+
+code {
+    color : blue;
+}
+
+.page {
+    max-width : 100ex;
+    margin : 0px auto;
+    text-align : justify;
+}
+
+#tv {
+    position : absolute;
+    top : 50px;
+    left : 80%;
+}
+
+#tv div {
+    margin-bottom : 15px;
+}
